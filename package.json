@@ -1,0 +1,27 @@
+{
+  "name": "exchange-web-service",
+  "version": "1.0.0",
+  "description": "Exchange Web Service APIs for NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinaybedre/exchange-web-service.git"
+  },
+  "keywords": [
+    "ews",
+    "exchange",
+    "web",
+    "service",
+    "outlook",
+    "api"
+  ],
+  "author": "Vinay Bedre <vinaybedre@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinaybedre/exchange-web-service/issues"
+  },
+  "homepage": "https://github.com/vinaybedre/exchange-web-service#readme"
+}
