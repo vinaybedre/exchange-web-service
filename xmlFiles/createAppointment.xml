@@ -1,0 +1,27 @@
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  <soap:Body>
+    <CreateItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
+                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+                SendMeetingInvitations="SendToNone" >
+      <SavedItemFolderId>
+        <t:DistinguishedFolderId Id="calendar"/>
+      </SavedItemFolderId>
+      <Items>
+        <t:CalendarItem xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+          <Subject>_SUBJECT_</Subject>
+          <Body BodyType="HTML">_BODY_</Body>
+          <ReminderIsSet>true</ReminderIsSet>
+          <ReminderMinutesBeforeStart>15</ReminderMinutesBeforeStart>
+          <Start>_START_DATE_</Start>
+          <End>_END_DATE_</End>
+          <IsAllDayEvent>false</IsAllDayEvent>
+          <LegacyFreeBusyStatus>_STATUS_</LegacyFreeBusyStatus>
+          <Location>_LOCATION_</Location>
+        </t:CalendarItem>
+      </Items>
+    </CreateItem>
+  </soap:Body>
+</soap:Envelope>
