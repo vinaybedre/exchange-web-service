@@ -17,8 +17,6 @@ var ews = function() {
     };
 
     this.createTask = function(subject, dueDate) {
-        console.log("Function not yet implemented fully");
-        return false;
         var contents = fs.readFileSync(__dirname + '/xmlFiles/createTask.xml').toString();
         contents = contents.replace("_SUBJECT_", subject);
         contents = contents.replace("_DUE_DATE_", dueDate);
