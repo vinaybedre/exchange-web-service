@@ -28,12 +28,13 @@ ews.config('username', 'password', 'https://mail.example.com/Ews/Exchange.asmx',
 // ews.createAppointment('Subject of Appointment', 'Body of appointment', 'Start date in UTC eg.2016-08-03T21:32:52Z', 'End date in UTC eg.2016-08-03T22:32:52Z', ews.constants.CalendarBusyStatus.<Free|Tentative|Busy|OutOfOffice|NoStatus|WorkingElsewhere>, 'Location of appointment');
 ews.createAppointment('Meet a colleague', 'Meet Paul', '2016-08-03T21:32:52Z', '2016-08-03T22:32:52Z', ews.constants.CalendarBusyStatus.OutOfOffice, 'Coffee Corner');
 ```
->Possible values for BusyStatus would be 
->*Free
->*Tentative
->*Busy
->*OutOfOffice
->*NoStatus
->*WorkingElsewhere
 
->As of now the reminder will be set automatically before 15 minutes of any appointment
+> Possible values for BusyStatus would be 
+> * Free
+> * Tentative
+> * Busy
+> * OutOfOffice
+> * NoStatus
+> * WorkingElsewhere
+
+> As of now the reminder will be set automatically before 15 minutes of any appointment
