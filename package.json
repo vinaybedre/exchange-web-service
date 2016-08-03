@@ -1,6 +1,6 @@
 {
   "name": "exchange-web-service",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Exchange Web Service APIs for NodeJS",
   "main": "index.js",
   "scripts": {
