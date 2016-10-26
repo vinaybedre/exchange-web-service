@@ -71,7 +71,15 @@ var ews = function() {
 
     this.sendMail = function(csvTo, subject, body) {
         var contents = fs.readFileSync(__dirname + '/xmlFiles/sendMail.xml').toString();
-        contents = contents.replace("_TO_", csvTo);
+        var toXML = '';
+        csvTo.split(',').map((to) => {
+            toXML += `
+                <t:Mailbox>
+                    <t:EmailAddress>${to}</t:EmailAddress>
+                </t:Mailbox>
+            `
+        });
+        contents = contents.replace("_TO_", toXML);
         contents = contents.replace("_SUBJECT_", subject);
         contents = contents.replace("_BODY_", body);
         that.post(contents);
