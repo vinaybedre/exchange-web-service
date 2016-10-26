@@ -16,9 +16,7 @@
           <t:Subject>_SUBJECT_</t:Subject>
           <t:Body BodyType="HTML">_BODY_</t:Body>
           <t:ToRecipients>
-            <t:Mailbox>
-              <t:EmailAddress>_TO_</t:EmailAddress>
-              </t:Mailbox>
+            _TO_
           </t:ToRecipients>
         </t:Message>
       </m:Items>
